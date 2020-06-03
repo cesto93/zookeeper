@@ -13,6 +13,6 @@ addons:
     organization: "cesto93"
     token: $SONAR_TOKEN
 script:
-  - mvn clean verify install sonar:sonar -Pcoverage -Dsonar.projectKey=$PROJECT_KEY -Dsonar.java.binaries=.
+  - mvn clean verify -Pfull-build install sonar:sonar -Pcoverage -Dsonar.projectKey=$PROJECT_KEY -Dsonar.java.binaries=.
   
 #script: mvn clean apache-rat:check verify spotbugs:check checkstyle:check -Pfull-build
