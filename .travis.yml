@@ -4,11 +4,11 @@ os: linux
 jdk: openjdk8
 cache:
   directories:
-  - "$HOME/.m2"
+    - "$HOME/.m2"
 addons:
   apt:
     packages:
-    - libcppunit-dev
+      - libcppunit-dev
   sonarcloud:
     organization: "cesto93"
     token: $SONAR_TOKEN
