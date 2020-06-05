@@ -12,6 +12,6 @@ addons:
     token: $SONAR_TOKEN  
 script:
   - mvn clean install -Pfull-build
-  - mvn clean verify install sonar:sonar -Pcoverage -Dsonar.projectKey=$PROJECT_KEY -Dsonar.java.binaries=.
+  - mvn sonar:sonar -Pcoverage -Dsonar.projectKey=$PROJECT_KEY -Dsonar.java.binaries=.
   
 #script: mvn -X clean apache-rat:check verify spotbugs:check checkstyle:check -Pfull-build
