@@ -13,4 +13,4 @@ addons:
 script:
   - mvn clean install -Pfull-build sonar:sonar -Pcoverage -Dsonar.projectKey=$PROJECT_KEY
   
-#script: mvn clean apache-rat:check verify spotbugs:check checkstyle:check -Pfull-build
+#script: mvn -X clean apache-rat:check verify spotbugs:check checkstyle:check -Pfull-build
