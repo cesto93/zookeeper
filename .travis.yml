@@ -9,10 +9,7 @@ addons:
       - libcppunit-dev
   sonarcloud:
     organization: "cesto93"
-    token: $SONAR_TOKEN
-cache:
-  directories:
-    - "$HOME/.m2"    
+    token: $SONAR_TOKEN  
 script:
   - mvn clean install -Pfull-build sonar:sonar -Pcoverage -Dsonar.projectKey=$PROJECT_KEY
   
