@@ -37,7 +37,7 @@
   <scm>
 	<connection>scm:git:git@github.com:cesto93/zookeeper.git</connection>
 	<developerConnection>scm:git:git@github.com:cesto93/zookeeper.git</developerConnection>
-	<url>https://github.com/SonarSource/cesto93/zookeeper</url>
+	<url>https://github.com/cesto93/zookeeper</url>
   </scm>
   <description>
     ZooKeeper is a centralized service for maintaining configuration information, naming,
