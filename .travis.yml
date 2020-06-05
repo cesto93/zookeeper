@@ -1,18 +1,19 @@
 language: java
-sudo: false
 os: linux
 jdk: openjdk8
-cache:
-  directories:
-    - "$HOME/.m2"
 addons:
+  update: true
   apt:
     packages:
+      - maven
       - libcppunit-dev
   sonarcloud:
     organization: "cesto93"
     token: $SONAR_TOKEN
+cache:
+  directories:
+    - "$HOME/.m2"    
 script:
-  - mvn clean -Pfull-build install sonar:sonar -Pcoverage -Dsonar.projectKey=$PROJECT_KEY
+  - mvn clean install -Pfull-build sonar:sonar -Pcoverage -Dsonar.projectKey=$PROJECT_KEY
   
 #script: mvn clean apache-rat:check verify spotbugs:check checkstyle:check -Pfull-build
