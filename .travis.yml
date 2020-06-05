@@ -11,6 +11,6 @@ addons:
     organization: "cesto93"
     token: $SONAR_TOKEN  
 script:
-  - mvn clean install -Pfull-build sonar:sonar -Pcoverage -Dsonar.projectKey=$PROJECT_KEY
+  - mvn -X clean install -Pfull-build sonar:sonar -Pcoverage -Dsonar.projectKey=$PROJECT_KEY
   
 #script: mvn -X clean apache-rat:check verify spotbugs:check checkstyle:check -Pfull-build
