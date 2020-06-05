@@ -33,12 +33,6 @@
   <!-- to change version: mvn -\-batch-mode release:update-versions -DdevelopmentVersion=3.6.0-SNAPSHOT -->
   <version>3.7.0-SNAPSHOT</version>
   <name>Apache ZooKeeper</name>
-  
-  <scm>
-	<connection>scm:git:git@github.com:cesto93/zookeeper.git</connection>
-	<developerConnection>scm:git:git@github.com:cesto93/zookeeper.git</developerConnection>
-	<url>https://github.com/cesto93/zookeeper</url>
-  </scm>
   <description>
     ZooKeeper is a centralized service for maintaining configuration information, naming,
     providing distributed synchronization, and providing group services. All of these kinds
@@ -71,11 +65,11 @@
     <module>zookeeper-recipes</module>
     <module>zookeeper-assembly</module>
   </modules>
-
+  
   <scm>
-    <connection>scm:git:https://gitbox.apache.org/repos/asf/zookeeper.git</connection>
-    <developerConnection>scm:git:https://gitbox.apache.org/repos/asf/zookeeper.git</developerConnection>
-    <url>https://gitbox.apache.org/repos/asf/zookeeper.git</url>
+    <connection>scm:git:git@github.com:cesto93/zookeeper.git</connection>
+    <developerConnection>scm:git:git@github.com:cesto93/zookeeper.git</developerConnection>
+    <url>https://github.com/cesto93/zookeeper</url>
     <tag>HEAD</tag>
   </scm>
   <issueManagement>
