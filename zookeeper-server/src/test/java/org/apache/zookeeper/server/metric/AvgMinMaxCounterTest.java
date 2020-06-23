@@ -9,7 +9,7 @@ import java.util.*;
 import static org.junit.Assert.assertEquals;
 
 @RunWith(Parameterized.class)
-public class TestAvgMinMaxCounter {
+public class AvgMinMaxCounterTest {
 
     private long[] values;
     private double avg;
@@ -18,7 +18,7 @@ public class TestAvgMinMaxCounter {
     private long total;
     private long count;
 
-    public TestAvgMinMaxCounter(long[] values, double avg, long min, long max, long total, long count) {
+    public AvgMinMaxCounterTest(long[] values, double avg, long min, long max, long total, long count) {
         this.values = values;
         this.avg = avg;
         this.min = min;
