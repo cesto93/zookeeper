@@ -241,8 +241,13 @@
         <maven.compiler.release>8</maven.compiler.release>
       </properties>
     </profile>
+
+    <!-- coverage -->
     <profile>
 			<id>coverage</id>
+            <activation>
+              <activeByDefault>true</activeByDefault>
+            </activation>
 			<build>
 				<plugins>
 					<plugin>
@@ -303,6 +308,9 @@
     <!-- parameters to pass to C client build -->
     <c-client-openssl>yes</c-client-openssl>
     <c-client-sasl>yes</c-client-sasl>
+
+    <!-- coverage -->
+    <aggregate.report.dir>tests/target/site/jacoco-aggregate/jacoco.xml</aggregate.report.dir>
 
   </properties>
 
