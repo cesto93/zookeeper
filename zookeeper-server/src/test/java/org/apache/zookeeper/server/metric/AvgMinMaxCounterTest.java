@@ -34,7 +34,7 @@ public class AvgMinMaxCounterTest {
                 {new long[] {}, 0.0, 0, 0, 0, 0},
                 {new long[] {0}, 0.0, 0, 0, 0, 1},
                 {new long[] {0, Long.MAX_VALUE}, Long.MAX_VALUE / 2 , 0, Long.MAX_VALUE, Long.MAX_VALUE, 2},
-                {new long[] {0,  Long.MIN_VALUE}, Long.MIN_VALUE / 2.0 , Long.MIN_VALUE, 0, Long.MIN_VALUE, 2}
+                {new long[] {0, Long.MIN_VALUE}, Long.MIN_VALUE / 2.0 , Long.MIN_VALUE, 0, Long.MIN_VALUE, 2}
         });
     }
 
