@@ -34,7 +34,8 @@ public class AvgMinMaxCounterTest {
                 {new long[] {}, 0.0, 0, 0, 0, 0},
                 {new long[] {0}, 0.0, 0, 0, 0, 1},
                 {new long[] {0, Long.MAX_VALUE}, Long.MAX_VALUE / 2 , 0, Long.MAX_VALUE, Long.MAX_VALUE, 2},
-                {new long[] {0, Long.MIN_VALUE}, Long.MIN_VALUE / 2.0 , Long.MIN_VALUE, 0, Long.MIN_VALUE, 2}
+                //{new long[] {0, Long.MIN_VALUE}, Long.MIN_VALUE / 2.0 , Long.MIN_VALUE, 0, Long.MIN_VALUE, 2}
+                {new long[] {-1, -2}, -1.5 , -2, -1, -3, 2}
         });
     }
 
@@ -89,7 +90,7 @@ public class AvgMinMaxCounterTest {
         for (long value : values) {
             counter.add(value);
         }
-        Map<String, Object> map = new LinkedHashMap<String, Object>();
+        Map<String, Object> map = new LinkedHashMap<>();
         map.put("avg_" + "metric", avg);
         map.put("min_" + "metric", min);
         map.put("max_" + "metric", max);
