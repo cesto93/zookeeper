@@ -78,6 +78,7 @@ public class ExecTest {
                 {new String[] {"create", "/zk_test", "my_data", "-t", "l"}, ExecTest.getZkNoExcept(), true},
                 {new String[] {"create", "/zk_test", "my_data", "-e", "-s"}, ExecTest.getZkNoExcept(), false},
                 {new String[] {"create", "/zk_test", "my_data", "ip:127.0.0.1:crwda"}, ExecTest.getZkNoExcept(), false},
+                {new String[] {"create", "/zk_test", "my_data", "-t", "100", "-s"}, ExecTest.getZkNoExcept(), false},
 
                 {new String[] {"create", "/zk_test", "my_data"}, ExecTest.getZkExcept(new IllegalArgumentException()),
                         true},
