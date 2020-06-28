@@ -79,6 +79,7 @@ public class ExecTest {
                 {new String[] {"create", "/zk_test", "my_data", "-e", "-s"}, ExecTest.getZkNoExcept(), false},
                 {new String[] {"create", "/zk_test", "my_data", "ip:127.0.0.1:crwda"}, ExecTest.getZkNoExcept(), false},
                 {new String[] {"create", "/zk_test", "my_data", "-t", "100", "-s"}, ExecTest.getZkNoExcept(), false},
+                {new String[] {"create", "/zk_test"}, ExecTest.getZkNoExcept(), false},
 
                 {new String[] {"create", "/zk_test", "my_data"}, ExecTest.getZkExcept(new IllegalArgumentException()),
                         true},
@@ -100,7 +101,7 @@ public class ExecTest {
                 verify(zk).create(isA(String.class), isA(byte[].class), ArgumentMatchers.anyList(),
                         isA(CreateMode.class), isA(Stat.class), isA(long.class));
             } else {
-                verify(zk).create(isA(String.class), isA(byte[].class), ArgumentMatchers.anyList(), isA(CreateMode.class));
+                verify(zk).create(isA(String.class), any(), ArgumentMatchers.anyList(), isA(CreateMode.class));
             }
         } catch (CliException e) {
             System.out.println(e.getMessage());
