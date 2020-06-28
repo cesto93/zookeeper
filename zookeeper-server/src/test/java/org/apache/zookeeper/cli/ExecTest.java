@@ -76,6 +76,7 @@ public class ExecTest {
                 {new String[] {"create", "/zk_test", "my_data", "-t", "100", "-c"}, ExecTest.getZkNoExcept(), true},
                 //added after coverage analysis
                 {new String[] {"create", "/zk_test", "my_data", "-t", "l"}, ExecTest.getZkNoExcept(), true},
+                {new String[] {"create", "/zk_test", "my_data", "-e", "-s"}, ExecTest.getZkNoExcept(), true},
 
                 {new String[] {"create", "/zk_test", "my_data"}, ExecTest.getZkExcept(new IllegalArgumentException()),
                         true},
