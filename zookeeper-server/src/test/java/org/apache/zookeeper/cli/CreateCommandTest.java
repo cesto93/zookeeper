@@ -40,7 +40,7 @@ public class CreateCommandTest {
     public void parseTest() {
         CreateCommand com = new CreateCommand();
         try {
-            com.parse(args);
+            assertNotNull(com.parse(args));
             assertFalse(exception);
         } catch (CliParseException e) {
             System.out.println(e.getMessage());

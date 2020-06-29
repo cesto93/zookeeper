@@ -914,9 +914,12 @@
         <configuration>
           <targetClasses>
             <param>org.apache.zookeeper.server.metric.AvgMinMaxCounter</param>
+            <param>org.apache.zookeeper.cli.CreateCommand</param>
           </targetClasses>
           <targetTests>
             <param>org.apache.zookeeper.server.metric.AvgMinMaxCounterTest</param>
+            <param>org.apache.zookeeper.cli.CreateCommandTest</param>
+            <param>org.apache.zookeeper.cli.ExecTest</param>
           </targetTests>
         </configuration>
       </plugin>
