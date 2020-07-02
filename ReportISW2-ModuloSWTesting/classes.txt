@@ -1,0 +1,4 @@
+zookeeper-server.src.main.java.org.apache.zookeeper.server.metric.AvgMinMaxCounter.java
+zookeeper-server.src.main.java.org.apache.zookeeper.cli.CreateCommand.java
+
+I Test sono stati lanciati tramite maven
